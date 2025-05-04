@@ -1,6 +1,6 @@
 {
     "schemaVersion": 1,
-    "id": "mod_id",
+    "id": "${mod_id}",
     "version": "${version}",
     "name": "${mod_name}",
     "description": "${description}",
@@ -8,15 +8,18 @@
         "${mod_author}"
     ],
     "contact": {
-        "homepage": "https://fabricmc.net/",
-        "sources": "https://github.com/FabricMC/fabric-example-mod"
+        "homepage": "https://github.com/Cursee-Development",
+        "sources": "https://github.com/Cursee-Development"
     },
     "license": "${license}",
-    "icon": "assets/modid/${mod_id}.png",
+    "icon": "${mod_id}.png",
     "environment": "*",
     "entrypoints": {
         "main": [
-            "com.example.examplemod.ExampleMod"
+            "com.cursee.examplemod.ExampleModFabric"
+        ],
+        "client": [
+            "com.cursee.examplemod.ExampleModClientFabric"
         ]
     },
     "mixins": [
@@ -26,8 +29,8 @@
     "depends": {
         "fabricloader": ">=0.14",
         "fabric": "*",
-        "minecraft": "${minecraft_version}",
-        "java": ">=17"
+        "minecraft": "${fabric_minecraft_version_range}",
+        "java": ">=${java_version}"
     },
     "suggests": {
         "another-mod": "*"
