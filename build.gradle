@@ -7,7 +7,7 @@ plugins {
 }
 
 forgix {
-    group = "${project.group}" // same as targetting ${group}, just not sure if expandProps occurs before this
+    group = "${project.group}"
     mergedJarName = "${mod_id}-merged-${minecraft_version}-${project.version}.jar"
     outputDir = "python/libs"
 
