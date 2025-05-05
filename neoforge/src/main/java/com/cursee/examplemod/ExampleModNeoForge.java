@@ -13,7 +13,7 @@ public class ExampleModNeoForge {
 
     public static IEventBus EVENT_BUS;
 
-    public ExampleModNeoForge(FMLModContainer container) {
+    public ExampleModNeoForge(final FMLModContainer container) {
         ExampleMod.init();
         EVENT_BUS = container.getEventBus();
         ModRegistryNeoForge.register(EVENT_BUS);
