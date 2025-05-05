@@ -17,7 +17,8 @@ public class ExampleModForge {
         EVENT_BUS = context.getModEventBus();
         if (FMLEnvironment.dist == Dist.CLIENT) new ExampleModClientForge(EVENT_BUS);
     }
-    
+
+    @SuppressWarnings("removal")
     public ExampleModForge() {
         this(FMLJavaModLoadingContext.get());
     }
