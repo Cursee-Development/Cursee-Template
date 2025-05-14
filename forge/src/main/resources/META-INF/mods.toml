@@ -28,3 +28,10 @@ license = "${license}" # Review your options at https://choosealicense.com/.
     versionRange = "${minecraft_version_range}"
     ordering = "NONE"
     side = "BOTH"
+
+[[dependencies.${mod_id}]]
+    modId = "monolib"
+    mandatory = true
+    versionRange = "[2.1.0,)"
+    ordering = "BEFORE"
+    side = "BOTH"
